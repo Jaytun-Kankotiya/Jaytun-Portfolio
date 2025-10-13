@@ -31,7 +31,28 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
+}
+
+#desktop-nav,
+#hamburger-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+#desktop-nav.scroll-down,
+#hamburger-nav.scroll-down {
+  transform: translateY(-100%);
+}
+
+#desktop-nav.scroll-up,
+#hamburger-nav.scroll-up {
+  transform: translateY(0);
 }
 
 .nav-links {

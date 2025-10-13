@@ -10,6 +10,14 @@
 
 
 @media screen and (max-width: 1200px) {
+  body {
+    padding-top: 12vh;
+  }
+  
+  html {
+    scroll-padding-top: 12vh;
+  }
+  
   #desktop-nav {
     display: none;
   }
@@ -21,9 +29,14 @@
   #hamburger-nav {
     display: flex;
   }
+  
   #experience,
   .experience-details-container {
     margin-top: 2rem;
+  }
+
+  #profile {
+    padding-top: 15vh;
   }
 
   #profile,
@@ -56,6 +69,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding-top: 12vh;
+  }
+  
+  html {
+    scroll-padding-top: 12vh;
+  }
+
   #contact,
   footer {
     height: 40vh;
@@ -69,6 +90,7 @@
   article {
     font-size: 1rem;
   }
+  
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
