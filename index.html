@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jaytun Kankotiya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jaytun Kankotiya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <!-- <ul class="nav-links"> -->
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <!-- </ul> -->
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jaytun Kankotiya</h1>
+        <p class="section__text__p2">
+          Full-Stack Developer | Creating Modern Web Applications <br />
+          Passionate about building intuitive, responsive, and high-performance
+          web solutions.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('')">
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/jaytun-kankotiya-06987525a/', '_blank')" />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="window.open('https://github.com/Jaytun-Kankotiya', '_blank')" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.png"
+            alt="Profile picture"
+            class="about-pic" />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Experience</h3>
+              <p>1.5+ Years <br />Full-Stack Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon" />
+              <h3>Education</h3>
+              <p>
+                Bachelor's in Electrical Engineering<br />Master's in Electrical
+                and Computer Engineering
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I am a Full-Stack Developer passionate about creating intuitive,
+              scalable, and user-centered web applications. <br />
+              I specialize in React, Node.js, MongoDB, and modern web
+              technologies to deliver seamless digital experiences. With
+              experience in both frontend and backend development, I ensure
+              robust performance, maintainable code, and optimized user
+              experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <p class="experience-description">
+              Skilled in creating responsive layouts using Bootstrap and
+              Material UI, implementing dynamic interfaces with React, and
+              building interactive data visualizations using Chart.js.
+            </p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html5.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css3.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/redux.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Redux</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/materialui.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/chartjs.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Chart.js</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/figma.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <p class="experience-description">
+              Experienced in developing RESTful APIs with Node.js and Express,
+              managing databases with MongoDB/MySQL, and integrating
+              authentication & security using JWT. Familiar with Python, Flask,
+              and FastAPI for building efficient backend services.
+            </p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/nodejs.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/express.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongoose.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Mongoose</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/axios.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Axios</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/fastapi.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Fast API</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/devtools.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Devtools</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Github</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/microservice.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Microservices</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jwt.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>JWT</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sqlalchemy.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>SQLAlchemy</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postman.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/vercel.svg"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Vercel</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1 project-header">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="project-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Workasana</h2>
+            <p class="project-description">
+              Workasana is a collaborative project management tool inspired by
+              Asana, featuring Kanban boards, timeline views, automated
+              workflows, and real-time team collaboration tools.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Jaytun-Kankotiya/Workasana-Frontend', '_blank')">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://workasana-frontend-nu.vercel.app/', '_blank')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Anvaya CRM</h2>
+            <p class="project-description">
+              An intuitive CRM system for lead management, offering pipeline
+              visualization, automated follow-ups, and detailed analytics to
+              improve sales efficiency.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Jaytun-Kankotiya/Anvaya-CRM-App-Frontend', '_blank')">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://anvaya-crm-app-frontend.vercel.app/', '_blank')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce</h2>
+            <p class="project-description">
+              A modern e-commerce platform with real-time inventory management,
+              secure checkout, personalized recommendations, and smooth user
+              experience across devices.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Jaytun-Kankotiya/eCommerce-Frontend', '_blank')">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://e-commerce-frontend-alpha-flax.vercel.app/', '_blank')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="contact-title">
+        Let's Connect <br />I'm always open to collaboration, full-time roles or
+        freelance opportunities. <br />
+      </p>
+      <p class="contact-title">Feel free to reach out via email or LinkedIn.</p>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon" />
+          <p>
+            <a href="mailto:jaytunkankotiya81@gmail.com"
+              >jaytunkankotiya81@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin Icon"
+            class="icon contact-icon" />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/jaytun-kankotiya-06987525a/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jaytun Kankotiya. All Rights Reserved.</p>
+      <img
+        src="./assets/arrow-up.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
