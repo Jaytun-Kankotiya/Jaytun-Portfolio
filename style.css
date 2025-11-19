@@ -79,7 +79,7 @@ a:hover {
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* haburger-menu  */
